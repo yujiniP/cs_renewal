@@ -45,7 +45,6 @@ iframe{display:block}
 .gnb_menu_common {float:right; position:relative; width:250px; margin-top: 9px; z-index: 999}
 .gnb_menu_common .sch_area {position:relative; float:left; width:213px; height:32px; margin:0 ;margin-right: 7px;}
 .gnb_menu_common .sch_area fieldset {}
-.gnb_menu_common .sch_area fieldset errr{}
 .gnb_menu_common .sch_area .inputBox {display: inline-block; height:32px; float: left;}
 .gnb_menu_common .sch_area .inputBox .schinput {display:inline-block; width:180px; height:32px;padding:0 7px;background:#fff; text-align:left;border:0; font-size:18px; line-height:1.286em; color:#000}
 .gnb_menu_common .sch_area .inputBox .schBtn_menu{position:absolute; right:0; top:0; display:inline-block; width:30px; height:30px; background:url(http://www.chosunonline.com/dhtm/images//common_icon.png) no-repeat -1px -1px; border:0; font-size:0; line-height:0; text-indent: -9999px; cursor:pointer;}
@@ -70,9 +69,9 @@ section {width:1158px; margin: 0 auto; padding:15px 0 40px 0; border-top:1px sol
 section:after{content:""; display:block; clear:both; *zoom:1}
 .sec_tit {float:left; width:134px; }
 .sec_con {float:left; width:600px; padding: 0 20px;border-left: solid 1px #d7d7d7}
-.sec_sub {float:left; width:340px; border-bottom: solid 1px #d7d7d7; box-sizing: border-box;}
-.sec_sub.left_border{border-left: solid 1px #d7d7d7; border-bottom:0; padding-left:20px}
-.sec_sub.last {border-bottom: 0;}
+.sec_sub {float:left; width:340px; box-sizing: border-box;}
+/* .sec_sub.left_border{border-left: solid 1px #d7d7d7; border-bottom:0; padding-left:20px}
+.sec_sub.last {border-bottom: 0;} */
 
 /* in sec_tit items */
 .sec_tit h3{font-size:18px;font-weight: bold}
@@ -104,7 +103,6 @@ dl.news_item {overflow: hidden; display:block; width:100%; margin-top: 9px}
 dl.news_item dd.desc:first-child{max-width:100%;}
 dl.news_item dt {font-size:16px; display: block; word-break: break-all; }
 dl.news_item.thum dt:first-child{font-weight:bold; font-size:18px;}
-dl.news_item dt span {font-size:12px; color:#999; font-weight:normal; padding-left:8px}
 
 dl.news_item dd.thumb {float:left; padding-right:20px; line-height: 0;}
 dl.news_item dd.desc {display: block; font-size:13px; margin-top:4px; word-break: break-all; line-height: 1.538em }
