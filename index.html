@@ -31,6 +31,8 @@
   <link href="http://www.chosun.com/site/data/rss/rss.xml" rel="alternate" type="application/rss+xml" title="Chosun.com [RSS]">
   <!--[if lt IE 9]><script src="http://news.chosun.com/dhtm/html5/html5shiv.min.js"></script><![endif]-->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+
 
   <script type="text/javascript" src="http://news.chosun.com/dhtm/js/mobile_move.js?v3"></script>
   <script type="text/javascript" src="http://news.chosun.com/dhtm/js/jquery-1.9.1.min.js"></script>
@@ -199,8 +201,29 @@
         <!-- sec_con -->
     
         <div class="sec_sub">
-            dfsfsdf
-        </div>
+            <div id="photo">
+                <ul class="bxslider">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+
+            <div id="video">
+                <ul class="bxslider">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+
+        </div><!-- sec_sub -->
+
+        <style>
+            .bx-controls-direction .disabled {opacity:.0}
+        </style>
         <!-- sec_sub -->
     
     </section>
@@ -209,5 +232,30 @@
   </div>
 
 </div><!-- csWrap -->
+
+<script type="text/javascript" src="http://news.chosun.com/dhtm/js/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#photo .bxslider').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            pager: false,
+            hideControlOnEnd: true,
+        });
+
+        $('#video .bxslider').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            pager: true,
+            speed: 0,
+            hideControlOnEnd: true,
+        });
+
+
+    });
+
+</script>
+
 </body>
 </html>
