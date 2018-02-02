@@ -7,24 +7,25 @@
 
 /* Reset import */
 @import url("http://chosun.com/dhtm/css/css_reset_2018.css");
+/* @import url("http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css"); */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 
 
 html, body{height:100%;}
 html{-webkit-text-size-adjust:none;}
-body{min-width:320px;word-break:keep-all;word-wrap:break-word;white-space:inherit;background: #f3f3f3;}
+body{min-width:320px;word-break:keep-all;word-wrap:break-word;white-space:inherit;background: #50b7e7;}
 body, input, button, textarea{font-family:'¸¼Àº °íµñ','Malgun Gothic',³ª´®°íµñ,µ¸¿ò,Dotum,±¼¸²,Gulim,'Apple SD Gothic Neo',sans-serif;}
-a, a:visited{color:#222; text-decoration:none}
+a, a:visited{color:#000; text-decoration:none}
 
 /* layout */
 #csWrap { min-width:1195px; }
 #csHeader {}
-#csContent {width: 1195px;margin: 0 auto;background: #fff; padding-top:15px; border-left: solid 1px #d7d7d7;border-right: solid 1px #d7d7d7; box-sizing: border-box;}
+#csContent {width: 1195px;margin: 0 auto;background: #fff; padding-top:15px; box-sizing: border-box;}
 iframe{display:block}
 
 
 /* GNB css*/
-.cs_text_top {position:absolute; bottom:8px; left: 9px;}
+.cs_text_top {position:absolute; bottom:8px; left : 9px;}
 .top_banner {width:100%; background: #fff;}
 .top_banner_area{position:relative; height:108px; padding-top:20px; width:1195px; margin: 0 auto; text-align: center}
 .top_banner_area .area_links{position:absolute; right:34px; bottom:10px; text-align: right;}
@@ -60,34 +61,27 @@ iframe{display:block}
 .menu_box dl dd.more_txt{line-height: 1.5em; margin: 4px 0;}
 .menu_box dl dt a, .menu_box dl dd a{color:#333}
 
-
-
-
 /* in section items */
 #csContent section:first-child {border-top:0}
-section {width:1158px; margin: 0 auto; padding:15px 0 40px 0; border-top:1px solid #000; position: relative;}
+section {width:100%; margin: 0 auto; padding:15px 0 40px 0; border-top:1px solid #000; position: relative;}
 section:after{content:""; display:block; clear:both; *zoom:1}
-.sec_tit {float:left; width:134px; }
-.sec_con {float:left; width:600px; padding: 0 20px;border-left: solid 1px #d7d7d7}
-.sec_sub {float:left; width:340px; box-sizing: border-box;}
-/* .sec_sub.left_border{border-left: solid 1px #d7d7d7; border-bottom:0; padding-left:20px}
-.sec_sub.last {border-bottom: 0;} */
+dl.news_item:after{content:""; display:block; clear:both; *zoom:1}
+.sec_tit {float:left; width:165px; background: #f1d2f7;}
+.sec_con {float:left; width:700px; padding: 0 20px;border-left: solid 1px #d7d7d7; box-sizing: border-box}
+.sec_sub {float:left; width:330px; box-sizing: border-box;}
+
 
 /* in sec_tit items */
-.sec_tit h3{font-size:18px;font-weight: bold}
+.sec_tit h3{font-size:20px; font-weight: 600; }
 .sec_date{display:block; font-size:14px; font-family: 'Open Sans', sans-serif; margin-bottom:5px;}
 #weather_text {display:block; font-size:14px;}
 
-
-ul.rel_art{}
+ul.rel_art{padding-top: 8px;}
 ul.rel_art li {position:relative;}
 ul.rel_art li:first-child { margin-top:0;}
-ul.rel_art li:before {background-color:#222;background-image: none;width: 2px;height: 2px;content: '';position: absolute;display: block;top: 13px;left: 2px;}
-ul.rel_art li a { color:#222; padding-left: 8px; font-size:14px; }
+ul.rel_art li:before {content:''; display:block; width:7px; height:7px; background:url(http://www.chosunonline.com/dhtm/images//common_icon.png) no-repeat -5px -71px; position: absolute; top: 50%; margin-top: -3px;}
+ul.rel_art li a { color:#222; padding-left: 12px; font-size:15px; }
 ul.rel_art li span {display: inline-block; font-size:12px; color:#999; font-weight:normal; padding-left:8px}
-ul.rel_art.arrow {margin-top: 5px}
-ul.rel_art.arrow li:before { content:''; display:block; width:7px; height:7px; background:url(http://www.chosunonline.com/dhtm/images//common_icon.png) no-repeat -5px -71px; position: absolute; top: 50%; margin-top: -3px;}
-ul.rel_art.arrow li a{font-size:16px; padding-left: 13px;}
 
 ul.sec_tit_sub {position:absolute; left:41px; bottom:40px; }
 ul.sec_tit_sub li {display:block; line-height:1.250em}
@@ -95,21 +89,28 @@ ul.sec_tit_sub li a {width:72px; font-size:12px; display:inline-block;  color:#9
 
 
 /* in sec_con items */
-.top_news {}
-.top_news h2{font-size:28px; font-weight:bold;line-height: 1.071em; word-break: break-all;}
-.top_news dl.news_item dd.desc {width: 100%;}
+.top_news {border-bottom:1px solid #eaeaea; padding-bottom:20px;}
+.top_news h2{font-size:28px; font-weight:bold; line-height: 1.250em; letter-spacing:-.075em; }
+.top_news dl.news_item dd.thumb {padding:0}
 
-dl.news_item {overflow: hidden; display:block; width:100%; margin-top: 9px}
+dl.news_item {overflow: hidden; display:block; width:100%; margin-top:16px}
 dl.news_item dd.desc:first-child{max-width:100%;}
-dl.news_item dt {font-size:16px; display: block; word-break: break-all; }
+dl.news_item dt {font-size:18px; display: block; line-height: 1.2em;}
+dl.news_item dt span.up_tit {display:inline-block; font-size:14px; height:22px; background:#c41916; color:#fff; padding:0 4px; margin-right:6px}
+dl.news_item dt span.up_tit.v1 {background:#fff; color:#c41916; border:1px solid #c41916; padding:0 3px;}
+dl.news_item dt a {line-height: 1.1em;}
 dl.news_item.thum dt:first-child{font-weight:bold; font-size:18px;}
 
-dl.news_item dd.thumb {float:left; padding-right:20px; line-height: 0;}
-dl.news_item dd.desc {display: block; font-size:13px; margin-top:4px; word-break: break-all; line-height: 1.538em }
-dl.news_item dd.desc a {color:#666}
+dl.news_item dd.thumb {float:left; padding-right:13px; line-height: 0;}
+dl.news_item dd.thumb a {display:inline-block; line-height: 0;}
+dl.news_item dd.desc {overflow: hidden; display: block; font-size:14px; margin-top:4px; word-break: break-all; line-height: 1.47em}
+dl.news_item dd.desc a {color:#777; letter-spacing:-.05em;}
 
-dl.news_item.thum{margin-top: 19px}
-dl.news_item.desc{margin-top: 1px}
+dl.news_item.thum {margin-top: 19px}
+dl.news_item.thum ul.rel_art {float:left; padding-top:5px}
+
+
+
 
 .sec_con dl.comt_item:first-child {padding-left:0}
 dl.comt_item { width:192px; padding-left:12px; float:left;}
