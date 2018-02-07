@@ -103,24 +103,19 @@ dl.news_item.thum dt:first-child{font-weight:bold; font-size:18px;}
 
 dl.news_item dd.thumb {float:left; padding-right:13px; line-height: 0;}
 dl.news_item dd.thumb a {display:inline-block; line-height: 0;}
-dl.news_item dd.desc {overflow: hidden; display: block; font-size:14px; margin-top:4px; word-break: break-all; line-height: 1.47em}
+dl.news_item dd.desc {overflow: hidden; display: block; font-size:14px; margin-top:4px; line-height: 1.47em}
 dl.news_item dd.desc a {color:#777; letter-spacing:-.05em;}
 
 dl.news_item.thum {margin-top: 19px}
 dl.news_item.thum ul.rel_art {float:left; padding-top:5px}
 
 
-
-
 .sec_con dl.comt_item:first-child {padding-left:0}
-dl.comt_item { width:192px; padding-left:12px; float:left;}
+dl.comt_item { width:210px; padding-left:12px; float:left;}
 dl.comt_item dd.thumb { position:relative; margin-bottom:3px; line-height:0;}
-dl.comt_item dd.thumb img { width:192px; height:108px;}
-dl.comt_item dd.thumb em { font-size:12px; height:22px; line-height:22px; color:#fff; position:absolute; top:0px; left:0px; padding:0 6px; opacity: 0.85; filter: alpha(opacity = 85);}
-dl.comt_item dd.thumb em.pink { background:#c73961;}
-dl.comt_item dd.thumb em.green { background:#019933;}
-dl.comt_item dd.thumb em.blue { background:#084ba0;}
-dl.comt_item dt {font-size: 14px; color:#222; line-height: 1.500em; word-break: break-all;}
+dl.comt_item dd.thumb img { width:210px; height:118px;}
+dl.comt_item dd.up_tit {font-size: 14px; color:#777;}
+dl.comt_item dt {font-size: 15px; color:#222; line-height: 1.500em;letter-spacing:-.05em;}
 
 
 
