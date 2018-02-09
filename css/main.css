@@ -24,6 +24,8 @@ a, a:visited{color:#000; text-decoration:none}
 iframe{display:block}
 
 
+
+
 /* GNB css*/
 .cs_text_top {position:absolute; bottom:8px; left : 9px;}
 .top_banner {width:100%; background: #fff;}
@@ -87,7 +89,6 @@ ul.sec_tit_sub {position:absolute; left:41px; bottom:40px; }
 ul.sec_tit_sub li {display:block; line-height:1.250em}
 ul.sec_tit_sub li a {width:72px; font-size:12px; display:inline-block;  color:#999; text-align:right; border-radius:3px; }
 
-
 /* in sec_con items */
 .top_news {border-bottom:1px solid #eaeaea; padding-bottom:20px;}
 .top_news h2{font-size:28px; font-weight:bold; line-height: 1.250em; letter-spacing:-.075em; }
@@ -97,11 +98,11 @@ dl.news_item {overflow: hidden; display:block; width:100%; margin-top:16px}
 dl.news_item dd.desc:first-child{max-width:100%;}
 dl.news_item dt {font-size:18px; display: block; line-height: 1.2em;}
 dl.news_item dt span.up_tit {display:inline-block; font-size:14px; height:22px; background:#c41916; color:#fff; padding:0 4px; margin-right:6px}
-dl.news_item dt span.up_tit.v1 {background:#fff; color:#c41916; border:1px solid #c41916; padding:0 3px;}
+dl.news_item dt span.up_tit.v1 {background:#fff; color:#c41916; border:1px solid #c41916; padding:0 3px; box-sizing: border-box;}
 dl.news_item dt a {line-height: 1.1em;}
 dl.news_item.thum dt:first-child{font-weight:bold; font-size:18px;}
 
-dl.news_item dd.thumb {float:left; padding-right:13px; line-height: 0;}
+dl.news_item dd.thumb {float:left; margin-right:13px; line-height: 0;}
 dl.news_item dd.thumb a {display:inline-block; line-height: 0;}
 dl.news_item dd.desc {overflow: hidden; display: block; font-size:14px; margin-top:4px; line-height: 1.47em}
 dl.news_item dd.desc a {color:#777; letter-spacing:-.05em;}
@@ -109,17 +110,32 @@ dl.news_item dd.desc a {color:#777; letter-spacing:-.05em;}
 dl.news_item.thum {margin-top: 19px}
 dl.news_item.thum ul.rel_art {float:left; padding-top:5px}
 
+dl.news_item.thum.round {float: left}
+dl.news_item.round dd.thumb{width:94px; height:94px; background:#e3e3e3; border-radius: 55px}
+dl.news_item.round dd.thumb img { width:94px; height:94px; border-radius: 55px}
+dl.news_item.round dt{ line-height:1.389em}
+dl.news_item.round dd.tit a{color:#777;font-size: 14px;}
+
 
 .sec_con dl.comt_item:first-child {padding-left:0}
-dl.comt_item { width:210px; padding-left:12px; float:left;}
+.comt_item_box {*zoom:1}
+.comt_item_box:after {content:" "; display:block; clear:both; padding-bottom: 8px;}
+dl.comt_item { width:210px; padding-left:14px; float:left;}
 dl.comt_item dd.thumb { position:relative; margin-bottom:3px; line-height:0;}
 dl.comt_item dd.thumb img { width:210px; height:118px;}
-dl.comt_item dd.up_tit {font-size: 14px; color:#777;}
-dl.comt_item dt {font-size: 15px; color:#222; line-height: 1.500em;letter-spacing:-.05em;}
+dl.comt_item dd.up_tit {font-size: 14px; margin-bottom:4px; }
+dl.comt_item dd.up_tit a{color:#777;}
+dl.comt_item dt {font-size: 15px; color:#222; line-height: 1.333em;letter-spacing:-.05em;}
 
 
-
-
+/* in sec_sub items */
+.sec_sub dl.sub_thum_item:first-child{ border:0; margin:0; padding:0}
+dl.sub_thum_item {overflow: hidden; display:block; width:100%; padding-top:18px; margin-top: 18px; border-top:1px solid #eaeaea}
+dl.sub_thum_item dt {font-size:15px; line-height: 1.2em; margin-top:4px}
+dl.sub_thum_item dd.thumb {float:left; padding-right:13px; line-height: 0;}
+dl.sub_thum_item dd.thumb a {display:inline-block; line-height: 0;}
+dl.sub_thum_item dd.tit{font-size:14px;}
+dl.sub_thum_item dd.tit a{color:#777;}
 
 
 
