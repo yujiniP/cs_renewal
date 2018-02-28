@@ -80,16 +80,11 @@ dl.news_item:after{content:""; display:block; clear:both; *zoom:1}
 .sec_date{display:block; font-size:14px; font-family: 'Open Sans', sans-serif; margin-bottom:5px;}
 #weather_text {display:block; font-size:14px;}
 
-ul.rel_art{padding-top: 8px;}
-ul.rel_art li {position:relative;}
-ul.rel_art li:first-child { margin-top:0;}
-ul.rel_art li:before {content:''; display:block; width:7px; height:7px; background:url(http://www.chosunonline.com/dhtm/images//common_icon.png) no-repeat -5px -71px; position: absolute; top: 50%; margin-top: -3px;}
-ul.rel_art li a { color:#222; padding-left: 12px; font-size:15px; }
-ul.rel_art li span {display: inline-block; font-size:12px; color:#999; font-weight:normal; padding-left:8px}
 
-ul.sec_tit_sub {position:absolute; left:41px; bottom:40px; }
+
+ul.sec_tit_sub {position:absolute; left:0; bottom:40px; }
 ul.sec_tit_sub li {display:block; line-height:1.250em}
-ul.sec_tit_sub li a {width:72px; font-size:12px; display:inline-block;  color:#999; text-align:right; border-radius:3px; }
+ul.sec_tit_sub li a {width:90px; font-size:13px; display:inline-block;  color:#777; text-align:left; border-radius:3px; }
 
 /* in sec_con items */
 .top_news {border-bottom:1px solid #eaeaea; padding-bottom:20px;}
@@ -120,6 +115,20 @@ dl.news_item.round dd.thumb img { width:72px; height:72px; border-radius: 55px}
 dl.news_item.round dt{ font-size: 15px; line-height:1.389em}
 dl.news_item.round dd.tit a{color:#777;font-size: 14px;}
 
+ul.rel_art{padding-top: 8px;}
+ul.rel_art li {position:relative;}
+ul.rel_art li:first-child { margin-top:0;}
+ul.rel_art li:before {content:''; display:block; width:7px; height:7px; background:url(http://www.chosunonline.com/dhtm/images//common_icon.png) no-repeat -5px -71px; position: absolute; top: 50%; margin-top: -3px;}
+ul.rel_art li a { color:#222; padding-left: 12px; font-size:15px; }
+ul.rel_art li span {display: inline-block; font-size:12px; color:#999; font-weight:normal; padding-left:8px}
+
+ul.rel_art.dot li:before {background-color:#222;background-image: none;width: 2px;height: 2px;content: '';position: absolute;display: block;top: 13px;left: 2px;}
+
+.notice {float:left}
+.notice strong{font-size:15px; color:#000}
+.more_link {}
+
+
 ul.tab_menu {}
 ul.tab_menu li{display:inline-block}
 ul.tab_menu li a{font-size:15px; font-weight:bold}
@@ -128,13 +137,12 @@ ul.tab_menu li.active a{color:#c41916; border-bottom:2px solid #c41916}
 .comt_item_box {*zoom:1}
 .comt_item_box:after {content:" "; display:block; clear:both; padding-bottom: 8px;}
 .comt_item { width:210px; padding-left:14px; float:left;}
-.comt_item span.thumb { position:relative; margin-bottom:3px; line-height:0;}
-.comt_item span.thumb a {display: block;}
+.comt_item span.thumb {display: block; position:relative;line-height:0;}
 .comt_item span.thumb img { width:210px; height:118px;}
-.comt_item .comt_txt {border-left:1px solid #d7d7d7; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;}
+.comt_item .comt_txt {padding:10px 8px;border-left:1px solid #d7d7d7; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;}
 .comt_item .comt_txt .item_tag {font-size: 14px; margin-bottom:4px; }
 .comt_item .comt_txt .item_tag a{color:#777;}
-.comt_item .comt_txt .item_tit {font-size: 15px; color:#000; line-height: 1.333em;letter-spacing:-.05em;}
+.comt_item .comt_txt .item_tit {display: block; font-size: 15px; color:#000; line-height: 1.333em;letter-spacing:-.05em;}
 
 #photo {overflow:hidden}
 .photo_wrap {float:left; width:660px; padding-right: 19px;}

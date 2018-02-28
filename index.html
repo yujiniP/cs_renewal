@@ -345,7 +345,7 @@
         </section>
         <!-- #sec_photo -->
 
-        <section class="art_list" id="sec_reader_service">
+        <section class="art_list" id="sec_reader_join">
             <div class="sec_tit">
                 <h3><a href="#">독자참여 서비스</a></h3>
             </div><!-- sec_tit -->
@@ -355,22 +355,22 @@
                     <div class="comt_item">
                         <span class="thumb"><a href=""><img src="images/pt_img02.png" alt="기사이미지"></a></span>
                         <div class="comt_txt">
-                            <span class="item_tit"><a href="">의사·간호사가 알려주는 '3분 진료 시간' 알차게 질문하는 법</a></span>
+                            <span class="item_tit"><a href="">요즘 가장 핫한 '소문난 빵 가게'</a></span>
                             <span class="item_tag"><a href="">#I♥Cafe</a></span>
                         </div>
                     </div>
                     <div class="comt_item">
                         <span class="thumb"><a href=""><img src="images/pt_img02.png" alt="기사이미지"></a></span>
                         <div class="comt_txt">
-                            <span class="item_tit"><a href="">의사·간호사가 알려주는 '3분 진료 시간' 알차게 질문하는 법</a></span>
-                            <span class="item_tag"><a href="">#I♥Cafe</a></span>
+                            <span class="item_tit"><a href="">'야식을 끊는' 가장 과학적인 방법이 궁금한가요?</a></span>
+                            <span class="item_tag"><a href="">#희망배달부</a></span>
                         </div>
                     </div>
                     <div class="comt_item">
                         <span class="thumb"><a href=""><img src="images/pt_img02.png" alt="기사이미지"></a></span>
                         <div class="comt_txt">
-                            <span class="item_tit"><a href="">의사·간호사가 알려주는 '3분 진료 시간' 알차게 질문하는 법</a></span>
-                            <span class="item_tag"><a href="">#I♥Cafe</a></span>
+                            <span class="item_tit"><a href="">인도네시아 '새 노래자랑' 챔피언의 깊고 짙은 음색?</a></span>
+                            <span class="item_tag"><a href="">#해외통신원</a></span>
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                             </a>
                         </dd>
                         <dt><a href="#none">남편의 비겁한 태도… <br>시누이들의 뻔뻔한 기억 상실</a></dt>
-                        <dd class="tit"><a href="#none">朝鮮칼럼 The Column</a></dd>
+                        <dd class="tit"><a href="#none">홍여사의 별별다방</a></dd>
                     </dl>
                     <dl class="news_item round">
                         <dd class="thumb">
@@ -400,7 +400,62 @@
                 오른쪽 그래프
             </div><!-- sec_sub -->
         </section>
-        <!-- #sec_reader_service -->
+        <!-- #sec_reader_join_service -->
+
+        <section class="art_list" id="sec_reader_private">
+            <div class="sec_tit">
+                <h3><a href="#">독자전용 서비스</a></h3>
+                <ul class="sec_tit_sub">
+                    <li><a href="">인사·부음·동정</a></li>
+                    <li><a href="">정정기사</a></li>
+                    <li><a href="">사고</a></li>
+                </ul>
+            </div><!-- sec_tit -->
+
+            <div class="sec_con">
+
+                <div id="event">
+                    <strong>알립니다</strong>
+                    <ul class="bxslider">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <style>
+                    .bx-pager.bx-default-pager {display:none}
+                </style>
+
+                <div class="notice">
+                    <strong>알립니다</strong>
+                    <ul class="rel_art dot">
+                        <li><a href="">제62회 '신문의 날' 표어 공모합니다</a></li>
+                        <li><a href="">서울하프마라톤, 독자들께 참가비 할인해드려요</a></li>
+                        <li><a href="">2018 대한민국 주류대상 포럼·자선파티 28일 개최</a></li>
+                    </ul>
+                </div>
+                <div class="more_link">
+                    <div>
+                        <dt>조선멤버스</dt>
+                        <dd><a href="">신문은 선생님</a></dd>
+                        <dd><a href="">맛있는 한자</a></dd>
+                        <dd><a href="">맛있는 영어</a></dd>
+                    </div>
+                    <div>
+                        <dt>서비스</dt>
+                        <dd>구독신청</dd>
+                        <dd>신문은 선생님</dd>
+                        <dd>뉴스레터</dd>
+                    </div>
+                </div>
+            </div><!-- sec_con -->
+
+            <div class="sec_sub">
+                오른쪽 
+            </div><!-- sec_sub -->
+        </section>
+        <!-- #sec_reader_private_service -->
 
         
 
@@ -428,9 +483,19 @@
             touchEnabled: false,
             infiniteLoop: false,
             pager: true,
-            speed: 0,
+            speed: 500,
             hideControlOnEnd: true,
         });
+
+        $('#event .bxslider').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            pager: true,
+            speed: 500,
+            hideControlOnEnd: false,
+        });
+        
+        
 
 
     });
