@@ -71,8 +71,10 @@ section:after{content:""; display:block; clear:both; *zoom:1}
 dl.news_item:after{content:""; display:block; clear:both; *zoom:1}
 .sec_tit {float:left; width:165px; background: #f1d2f7;}
 .sec_con {float:left; width:700px; padding: 0 20px;border-left: solid 1px #d7d7d7; box-sizing: border-box}
-.sec_sub {float:left; width:330px; box-sizing: border-box;}
 .sec_con.wide {width:1030px; padding-right: 0;}
+.sec_sub {float:left; width:330px; box-sizing: border-box;}
+.sec_sub.line {border-left: solid 1px #d7d7d7;}
+
 
 
 /* in sec_tit items */
@@ -188,6 +190,15 @@ ul.tab_menu li.active a{color:#c41916; border-bottom:2px solid #c41916}
 
 
 /* in sec_sub items */
+dl.sub_circle_thum {overflow: hidden; display:block; width:100%; padding-top:18px; margin-top: 18px;}
+dl.sub_circle_thum dt {font-size:15px; line-height: 1.2em; margin-top:4px}
+dl.sub_circle_thum dd.thumb {overflow:hidden; float:left; width:60px; height:60px; background: #fff; border:1px solid #d7d7d7; box-sizing: border-box; border-radius: 55px; margin-right:13px; line-height: 0;}
+dl.sub_circle_thum dd.thumb a {display:inline-block; line-height: 0;}
+dl.sub_circle_thum dd.thumb img {}
+dl.sub_circle_thum dd.tit{font-size:14px;}
+dl.sub_circle_thum dd.tit a{color:#777;}
+
+
 .sec_sub dl.sub_thum_item:first-child{ border:0; margin:0; padding:0}
 dl.sub_thum_item {overflow: hidden; display:block; width:100%; padding-top:18px; margin-top: 18px; border-top:1px solid #eaeaea}
 dl.sub_thum_item dt {font-size:15px; line-height: 1.2em; margin-top:4px}
