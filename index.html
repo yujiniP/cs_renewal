@@ -34,6 +34,7 @@
   
   <script type="text/javascript" src="http://news.chosun.com/dhtm/js/mobile_move.js?v3"></script>
   <script type="text/javascript" src="http://news.chosun.com/dhtm/js/jquery-1.9.1.min.js"></script>
+  <!-- <script type="text/javascript" src="http://news.chosun.com/dhtm/js/jquery.bxslider.min.js"></script> -->
   <script type="text/javascript" src="http://news.chosun.com/dhtm/js/common/collecter.js"></script>
 </head>
 
@@ -166,7 +167,10 @@
             </div><!-- sec_con -->
             
             <div class="sec_sub">
-                <div class="">
+                <div class="sub_circle_box">
+                    <dl class="sub_circle_thum title">
+                        <dt><a href="#none">북측은 어떤 조건에서<br> '미국과 대화할 용의가 있다'는 건가</a></dt>
+                    </dl>
                     <dl class="sub_circle_thum">
                         <dd class="thumb"><a href="#none"><img src="images/ps_01.png" alt="기사이미지"></a></dd>
                         <dt><a href="#none">매티스 판단에 맡겨진 한반도의 운명</a></dt>
@@ -185,8 +189,21 @@
                         <dt><a href="#none">상금 없이 트로피만 주는 아카데미賞</a></dt>
                         <dd class="tit"><a href="#none">정경원의 디자인 노트</a></dd>
                     </dl>
+                </div><!-- -->
+
+                <div class="channel_box">
+                    <strong><a href="#none;">기자채널</a></strong>
+                    <div id="">
+                        <ul id="channel_id">
+                            <li><a href="#none;">1</a></li>
+                            <li><a href="#none;">2</a></li>
+                            <li><a href="#none;">3</a></li>
+                            <li><a href="#none;">4</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="rectbanner">
+  
+                <div class="aside_bn">
                     <script type="text/javascript"><!-- 
                     google_ad_client = "ca-pub-8912554504148064"; 
                     / news_top_300X250 / 
@@ -198,11 +215,50 @@
                     </script>
                     <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
                 </div>
+ 
+                <div class="people_box">
+                    <strong>People &#38; Life</strong>
+                    <ul id="people_id">
+                        <li><a href="#none;">1</a></li>
+                        <li><a href="#none;">2</a></li>
+                        <li><a href="#none;">3</a></li>
+                        <li><a href="#none;">4</a></li>
+                        <li><a href="#none;">5</a></li>
+                        <li><a href="#none;">6</a></li>
+                    </ul>
+                </div>
+
+                <div class="live_box">
+                    <strong><a href="#none;">실시간 기사</a></strong>
+                    <div class="inner">
+                        <dl class="live_item">
+                            <dd class="time">16:34</dd>
+                            <dd class="thumb">
+                                <a href="#none;"><img src="http://image.chosun.com/sitedata/thumbnail/201803/05/2018030501853_0_thumb.jpg"></a>
+                            </dd>
+                            <dt><a href="#none;">동해를 일본해로 표기했던 테슬라 다급히 수정</a></dt>
+                        </dl>
+                        <dl class="live_item">
+                            <dd class="time">15:09</dd>
+                            <dt><a href="#none;">국방부, 성주內 '사드 제3후보지' 공식 평가 착수</a></dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="hash_box">
+                    <ul id="hash_id">
+                        <li><a href="#none;">1</a></li>
+                        <li><a href="#none;">2</a></li>
+                        <li><a href="#none;">3</a></li>
+                    </ul>
+                </div>
+
+
             </div><!-- sec_sub -->
         </section>
         <!-- #sec_headline -->
 
-        <section class="art_list" id="sec_opinion">
+        <section class="art_list" id="sec_category">
             <div class="sec_tit">
                 <h3><a href="#">카테고리 뉴스</a></h3>
             </div>
@@ -248,8 +304,8 @@
             <div class="sec_sub">
                 
         
-                <div id="video">
-                    <ul class="bxslider">
+                <div>
+                    <ul id="video_id">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -266,69 +322,23 @@
                 }
             </style>
         </section>
-        <!-- #sec_opnion -->
+        <!-- #sec_category -->
 
-        <section class="art_list" id="sec_spots">
+        <section class="art_list" id="sec_my_pan">
             <div class="sec_tit">
-                <h3><a href="#">라이프&middot;건강</a></h3>
+                <h3><a href="#">My 판</a></h3>
             </div><!-- sec_tit -->
 
-            <div class="sec_con">
-                <div class="comt_item_box">
-                    <dl class="comt_item">
-                        <dd class="thumb"><a href=""><img src="images/art3_img.png" alt="기사이미지"></a></dd>
-                        <dd class="item_tit"><a href="">건강</a></dd>
-                        <dt><a href="">의사·간호사가 알려주는 '3분 진료 시간' 알차게 질문하는 법</a></dt>
-                    </dl>
-                    <dl class="comt_item">
-                        <dd class="thumb"><a href=""><img src="images/art3_img.png" alt="기사이미지"></a></dd>
-                        <dd class="item_tit"><a href="">Book</a></dd>
-                        <dt><a href="">의사·간호사가 알려주는 '3분 진료 시간' 알차게 질문하는 법</a></dt>
-                    </dl>
-                    <dl class="comt_item">
-                        <dd class="thumb"><a href=""><img src="images/art3_img.png" alt="기사이미지"></a></dd>
-                        <dd class="item_tit"><a href="">푸드</a></dd>
-                        <dt><a href="">덕유산 시린 雪景 마음에 담고, 얼큰한 어죽으로 언 몸 녹이세요</a></dt>
-                    </dl>
+            <div class="sec_con wide">
+                <div id="my_pan_id">
+                    <div>판1</div>
+                    <div>판2</div>
+                    <div>판3</div>
+                    <div>판4</div>
                 </div>
-                <dl class="news_item">
-                    <dt><a href="#none">[건강] '입'으로 숨 쉬지 마세요, 충치 등 치주질환 원인될 수도</a></dt>
-                </dl>
-                <dl class="news_item">
-                    <dt><a href="#none">[여행] 군사도시가 예술의 도시로… 거리 미술관으로 변신한 '박수근 고향' 양구</a></dt>
-                </dl>
-                <dl class="news_item">
-                    <dt><a href="#none">[홈&#38;리빙] 자동차보험 특약으로 보험료 절약하는 방법 6가지</a></dt>
-                </dl>
-                <dl class="news_item">
-                    <dt><a href="#none">[바이크] 멀티 자전거 킥스탠드로, 몸은 가볍게! 준비는 철저하게!</a></dt>
-                </dl>
             </div><!-- sec_con -->
-
-            <div class="sec_sub">
-                <dl class="sub_thum_item">
-                    <dd class="thumb"><a href="#none"><img src="images/art4_img.png" alt="기사이미지"></a></dd>
-                    <dd class="tit"><a href="#none">AD</a></dd>
-                    <dt><a href="#none">The New S-Class 시승신청</a></dt>
-                </dl>
-                <dl class="sub_thum_item">
-                    <dd class="thumb"><a href="#none"><img src="images/art4_img.png" alt="기사이미지"></a></dd>
-                    <dd class="tit"><a href="#none">국내여행</a></dd>
-                    <dt><a href="#none">먼저 봄이 시작되는 섬 '제주', 2월 제주 관광 10선은 어디?</a></dt>
-                </dl>
-                <dl class="sub_thum_item">
-                    <dd class="thumb"><a href="#none"><img src="images/art4_img.png" alt="기사이미지"></a></dd>
-                    <dd class="tit"><a href="#none">AD</a></dd>
-                    <dt><a href="#none">The New S-Class 시승신청</a></dt>
-                </dl>
-                <dl class="sub_thum_item">
-                    <dd class="thumb"><a href="#none"><img src="images/art4_img.png" alt="기사이미지"></a></dd>
-                    <dd class="tit"><a href="#none">AD</a></dd>
-                    <dt><a href="#none">The New S-Class 시승신청</a></dt>
-                </dl>
-            </div><!-- sec_sub -->
         </section>
-        <!-- #sec_spots -->
+        <!-- #sec_sec_my_pan -->
 
         <section class="art_list" id="sec_photo">
             <div class="sec_tit">
@@ -434,17 +444,19 @@
 
             <div class="sec_con">
 
-                <div id="event">
+                <div >
                     <strong>알립니다</strong>
-                    <ul class="bxslider">
+                    <ul id="event_id">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
                     </ul>
                 </div>
                 <style>
-                    .bx-pager.bx-default-pager {display:none}
+                    /* .bx-pager.bx-default-pager {display:none} */
                 </style>
 
                 <div class="notice">
@@ -481,6 +493,27 @@
 
     </div><!-- #csContent -->
 
+    <div class="cs_Footer">
+      <div class="Footer_inner">
+        <a href="http://www.chosunonline.com/">
+          <img src="http://www.chosunonline.com/dhtm/images//logo_cs_online_footer.png" alt="chosun online" class="img_logo_footer">
+        </a>
+        <div class="Footer_add">
+            <ul>
+                <li>주소 : 서울특별시 중구 세종대로21길 30</li><li>인터넷신문등록번호 : 서울 아01718</li><li>등록일자 : 2011.07.26</li><li>발행인/편집인 : 홍준호</li><li>대표번호 : 02)724-5114</li><li class="border_none">Copyright &copy; All rights reserved</li>
+            </ul>
+        </div>
+        <div class="Footer_add">
+            <dl>
+                <dt>조선일보</dt><dd><a href="https://about.chosun.com/home.php" target="_blank">회사소개</a></dd><dd><a href="https://about.chosun.com/pages/partners/ad_info_01.php" target="_blank">광고안내(신문)</a></dd><dd><a href="https://about.chosun.com/pages/hr/recruit_c02.php" target="_blank">기자채용</a></dd><dd><a href="http://membership.chosun.com/etc/jebo/write.html" target="_blank">기사제보</a></dd><dd><a href="http://news.chosun.com/section/customer/index.html" target="_blank">고객센터</a></dd><dd><a href="http://news.chosun.com/ombudsman/" target="_blank">독자권익보호위원회</a></dd><dd><a href="http://newseum.chosun.com/newseum/Default.asp" target="_blank">조선일보 기자체험</a></dd><dd><a href="http://gallery.chosun.com/" target="_blank">미술관이용</a></dd>
+            </dl>
+            <dl>
+                <dt>디지틀조선일보</dt><dd><a href="#none;">회사소개</a></dd><dd><a href="#none;">광고안내(신문)</a></dd><dd><a href="#none;">기자채용</a></dd><dd><a href="#none;">기사제보</a></dd><dd><a href="#none;">고객센터</a></dd><dd><a href="#none;">독자권익보호위원회</a></dd><dd><a href="#none;">조선일보 기자체험</a></dd><dd><a href="#none;">미술관이용</a></dd>
+            </dl>
+        </div>
+      </div>
+    </div>
+
 </div><!-- #csWrap -->
 
 <script type="text/javascript" src="http://news.chosun.com/dhtm/js/jquery.bxslider.min.js"></script>
@@ -499,7 +532,7 @@
             moveSlides: 1,
         });
 
-        $('#video .bxslider').bxSlider({
+        $('ul#video_id').bxSlider({
             touchEnabled: false,
             infiniteLoop: false,
             pager: true,
@@ -507,7 +540,55 @@
             hideControlOnEnd: true,
         });
 
-        $('#event .bxslider').bxSlider({
+        $('ul#event_id').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            randomStart: true,
+            pager: true,
+            speed: 500,
+            pagerType: 'short',
+            minSlides: 2,
+            maxSlides: 2,
+            slideMargin: 10,
+            slideWidth: 325,
+            hideControlOnEnd: false,
+        });
+
+        $('ul#channel_id').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            randomStart: true,
+            pager: true,
+            speed: 500,
+            pagerType: 'short',
+            hideControlOnEnd: false,
+        });
+
+        $('ul#people_id').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            randomStart: true,
+            pager: true,
+            speed: 500,
+            pagerType: 'short',
+            minSlides: 2,
+            maxSlides: 2, 
+            slideMargin: 10,
+            slideWidth: 160,
+            hideControlOnEnd: false,
+        });
+
+        $('ul#hash_id').bxSlider({
+            touchEnabled: false,
+            infiniteLoop: false,
+            randomStart: true,
+            pager: true,
+            speed: 500,
+            pagerType: 'short',
+            hideControlOnEnd: false,
+        });
+
+        $('#my_pan_id').bxSlider({
             touchEnabled: false,
             infiniteLoop: false,
             pager: true,
