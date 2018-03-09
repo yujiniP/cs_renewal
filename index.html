@@ -43,8 +43,26 @@
 <div id="csWrap">
     
     <div id="csHeader" class="csh_main" >
-        <div class="top_banner" >
-            <div class="top_banner_area">
+        <div class="top_head">
+            <div class="inner">
+                <ul class="lang">
+                    <li><a href="http://cnnews.chosun.com/" target="cs_new">中文</a></li>
+                    <li><a href="http://english.chosun.com/" target="cs_new">English</a></li>
+                    <li><a href="http://www.chosunonline.com/" target="cs_new">日本語</a></li>
+                </ul> 
+                <div class="guest_info">
+                    <span><a href="#none;" target="cs_new">지면보기</a></span>
+                    <span><a href="#none;" target="cs_new">구독신청</a></span>
+                    <span><a href="#none;" target="cs_new">로그인</a></span>
+                    <span class="noti"><a href="#none;" target="cs_new">알림</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="top_area">
+            <div class="top_ad1"><a href="#none;">광고1</a></div>
+            <div class="cs_logo"><a href="#none;">chosun.com</a></div>
+            <div class="top_ad2"><a href="#none;">광고2</a></div>
+            <!-- <div class="top_area_area">
                 <h1><a href="http://www.chosunonline.com/" class="img_logo"  title="chosun Online"></a></h1>
                 <div class="gnb_menu_common">
                     <div class="sch_area">
@@ -60,11 +78,13 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="gnb_menu">
             <div class="gnb_menu_inner">
+                <div class="btn_menu">햄버거버튼</div>
                 <ul>
+                    <li><a href="#none" title="뉴스홈" id="">뉴스홈</a></li>
                     <li><a href="#none" title="정치" id="">정치</a></li>
                     <li><a href="#none" title="오피니언" id="">오피니언</a></li>
                     <li><a href="#none" title="테크" id="">테크</a></li>
@@ -72,7 +92,12 @@
                     <li><a href="#none" title="건강" id="">건강</a></li>
                     <li><a href="#none" title="스포츠" id="">스포츠</a></li>
                     <li><a href="#none" title="연예" id="">연예</a></li>
-                </ul>  
+                </ul>
+                <ul class="panmenu">
+                    <li><a href="#none" title="땅집고" id="">땅집고</a></li> 
+                    <li><a href="#none" title="유용원의 군사세계" id="">유용원의 군사세계</a></li>
+                    <li><a href="#none" title="JOB&amp;" id="">JOB&amp;</a></li>
+                </ul> 
                 <button type="button" class="btn_menu_show" id="menu_button_id" onclick="menu_func()">메뉴버튼</button>
             </div>
         </div>
@@ -81,9 +106,20 @@
     <div id="csContent">
         <section class="art_list" id="sec_headline">
             <div class="sec_tit">
+                날씨
                 <span class="sec_date" id="sec_date_id"><script>document.write(myyear + '. ');document.write(month + '. ');document.write( myweekday + ' (' + day + ')');</script></span>
                 <script type="text/javascript" src="http://ekr.chosunonline.com/svc/wsdata/chosunWeather.js" type="text/javascript" charset="utf-8"></script>
                 <div class="sec_date_weather"><span id="weather_text"></span></div>
+                <div class="trending">
+                    <strong>Trending</strong>
+                    <ul>
+                        <li><a href="#none;">#국세청</a></li>
+                        <li><a href="#none;">#평창올림픽</a></li>
+                        <li><a href="#none;">#최고 한파</a></li>
+                        <li><a href="#none;">#가상화폐 규제</a></li>
+                        <li><a href="#none;">#2018</a></li>
+                    </ul>
+                </div>
             </div><!-- sec_tit -->
 
             <div class="sec_con">
@@ -573,13 +609,13 @@ $(document).ready(function () {
                         </ul>
                     </div>
                     <div class="photo_wrap_nav scroll_style">
-                        <div id="bx-pager">
+                        
                             <a href="" data-slide-index="0"><div><img src="images/art4_img.png" /></div></a>
                             <a href="" data-slide-index="1"><div><img src="images/art4_img.png" /></div></a>
                             <a href="" data-slide-index="2"><div><img src="images/art4_img.png" /></div></a>
                             <a href="" data-slide-index="3"><div><img src="images/art4_img.png" /></div></a>
                             <a href="" data-slide-index="4"><div><img src="images/art4_img.png" /></div></a>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -769,7 +805,6 @@ $(document).ready(function () {
         });
 
         $('#photo .bxslider').bxSlider({
-            pagerCustom: '#bx-pager',
             touchEnabled: false,
             infiniteLoop: true,
             pager: true,
